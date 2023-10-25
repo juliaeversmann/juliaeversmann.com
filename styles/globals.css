@@ -1,0 +1,64 @@
+:root {
+  /* pretty colors */
+  --background-color: #febe14;
+  --text-color: black;
+  --foreground-color: #ef382e;
+
+  /* units */
+  --header-height: 11vh;
+  --default-padding: 2em;
+  --border-thickness: 2px;
+
+  /* setting some stuff */
+  background-color: var(--background-color);
+  font-family: sans-serif;
+}
+
+h1 {
+  font-family: "ruddy", sans-serif;
+}
+p {
+  font-family: "elza-narrow";
+}
+body {
+  padding: var(--default-padding);
+  margin: auto;
+}
+
+.outlined-box {
+  border: var(--border-thickness) solid var(--text-color);
+  box-shadow: 3px 3px var(--text-color);
+  padding: var(--default-padding);
+}
+
+.lizard {
+  height: var(--header-height);
+  position: absolute;
+  filter: url(#turbulence-filter);
+}
+
+.lizard#tongue {
+  animation: tongue_stick_out 30s infinite step-end;
+}
+
+header {
+  height: var(--header-height);
+}
+
+/* keyframe opacity from 0 to 1 with 30 seconds inbetween */
+@keyframes tongue_stick_out {
+  0% {
+    opacity: 0;
+  }
+  3% {
+    opacity: 1;
+  }
+  6% {
+    opacity: 0;
+  }
+}
+.name {
+  padding-top: 1em;
+  max-width: 500px;
+  filter: url(#turbulence-filter);
+}

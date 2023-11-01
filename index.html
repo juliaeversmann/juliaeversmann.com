@@ -14,33 +14,110 @@
     />
 
     <link rel="stylesheet" type="text/css" href="styles/globals.css" />
-    <link rel="preload" rel="stylesheet" href="https://use.typekit.net/soz6lwi.css" />
-    <!-- <link rel="icon" href="favicon.png" /> -->
+    <link
+      rel="preload"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://use.typekit.net/soz6lwi.css"
+    />
+
+    <link rel="icon" href="images/site/lizard_1.svg" />
   </head>
 
   <body>
-    <svg style="position: absolute;"><defs><filter id="turbulence-filter"><feTurbulence id="turbulence-filter__turbulence" type="turbulence" baseFrequency="0.03" numOctaves="1" result="turbulence"><animate attributeName="baseFrequency" from="0.03" to="0.04" dur="0.5s" calcMode="discrete" values="0.03;0.01;0.04" keyTimes="0;0.33333;0.66666" fill="freeze" repeatCount="indefinite"></animate></feTurbulence><feDisplacementMap id="turbulence-filter__displacement" in2="turbulence" in="SourceGraphic" scale="4" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap></filter></defs></svg>
-    <header>
+    <script>
+      function play() {
+        // show tongue
+        let lizard = document.getElementById("tongue");
+        lizard.style.opacity = 1;
+        lizard.style.pointerEvents = "none";
+
+        var audio = document.getElementById("enzo");
+        audio.play();
+        console.log("ruff");
+
+        // hide tongue
+        setTimeout(function () {
+          lizard.style.opacity = 0;
+          lizard.style.pointerEvents = "auto";
+        }, 1000);
+      }
+    </script>
+    <svg style="position: absolute; z-index: -1">
+      <defs>
+        <filter id="turbulence-filter">
+          <feTurbulence
+            id="turbulence-filter__turbulence"
+            type="turbulence"
+            baseFrequency="0.03"
+            numOctaves="1"
+            result="turbulence"
+          >
+            <animate
+              attributeName="baseFrequency"
+              from="0.03"
+              to="0.04"
+              dur="0.5s"
+              calcMode="discrete"
+              values="0.03;0.01;0.04"
+              keyTimes="0;0.33333;0.66666"
+              fill="freeze"
+              repeatCount="indefinite"
+            ></animate>
+          </feTurbulence>
+          <feDisplacementMap
+            id="turbulence-filter__displacement"
+            in2="turbulence"
+            in="SourceGraphic"
+            scale="4"
+            xChannelSelector="R"
+            yChannelSelector="G"
+          ></feDisplacementMap>
+        </filter>
+      </defs>
+    </svg>
+    <header id="turbulence">
       <img class="lizard" id="idle" src="images/site/lizard_1.svg" />
-      <img class="lizard" id="tongue" src="images/site/lizard_2.svg" />
+      <img
+        class="lizard"
+        id="tongue"
+        src="images/site/lizard_2.svg"
+        onclick="play()"
+      />
     </header>
 
-    <div >
-        <h1 class="name"> julia eversmann</h1>
-    </div>
+    <div id="turbulence" style="text-align: center">
+      <h1 class="name">꧁ julia eversmann ꧂</h1>
+      <h2>portfolio <span class="arrow"></span></h2>
 
+      <h2>introduction <span class="arrow"></span></h2>
+      <h2>contact <span class="arrow"></span></h2>
     </div>
-    <p>
-      Lorem ipsum dolor it amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
-    </p>
-    <div class="shape"></div>
-    <button>enter the dungeon</button>
+    <script type="text/javascript">
+      // cycle arrow class through three different textcontents
+      let arrow = document.getElementsByClassName("arrow");
+      let arrowText = ["➩", "➫", "➬", "➭", "➮", "➯", "➱", "➲", "➳", "➴"];
+      let arrowIndex = 0;
+      setInterval(function () {
+        // for each arrow
+        for (let i = 0; i < arrow.length; i++) {
+          arrow[i].textContent = arrowText[arrowIndex];
+        }
+        arrowIndex++;
+        if (arrowIndex > arrowText.length - 1) {
+          arrowIndex = 0;
+        }
+      }, 222);
+    </script>
+    <!-- <div
+      style="
+        filter: url(#turbulence-filter);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 200px;
+      "
+    >
+      hola
+    </div> -->
+    <audio id="enzo" src="sounds/enzo.mp3"></audio>
   </body>
 </html>
-

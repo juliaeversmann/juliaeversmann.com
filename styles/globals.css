@@ -34,11 +34,11 @@ body {
 .lizard {
   height: var(--header-height);
   position: absolute;
-  filter: url(#turbulence-filter);
 }
 
 .lizard#tongue {
-  animation: tongue_stick_out 30s infinite step-end;
+  /* animation: tongue_stick_out 30s infinite step-end; */
+  opacity: 0;
 }
 
 header {
@@ -57,11 +57,14 @@ header {
     opacity: 0;
   }
 }
+
+#turbulence {
+  filter: url(#turbulence-filter);
+}
 .name {
   padding-top: 1em;
-  max-width: 500px;
-  filter: url(#turbulence-filter);
+  /* max-width: 500px; */
   margin: 0;
   padding: 0;
-  font-size: 4em !important;
+  font-size: 2.5em !important;
 }

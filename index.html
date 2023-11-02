@@ -32,15 +32,18 @@
       lizard.style.opacity = 1;
       lizard.style.pointerEvents = "none";
 
-      var audio = document.getElementById("enzo");
+      var audio = document.getElementById("boink");
+      // generate random number between 1 and 10
+      var rand = Math.floor(Math.random() * 10) + 1;
+      // set audio source to a random bark
+      audio.src = "sounds/boink_" + rand + ".mp3";
       audio.play();
-      console.log("ruff");
 
       // hide tongue
       setTimeout(function () {
         lizard.style.opacity = 0;
         lizard.style.pointerEvents = "auto";
-      }, 1000);
+      }, 200);
     }
   </script>
 
@@ -58,28 +61,28 @@
       </filter>
     </defs>
   </svg>
-  <header>
-    <div id="turbulence">
-      <img class="lizard" id="idle" src="images/site/lizard_1.svg" />
-      <img class="lizard" id="tongue" src="images/site/lizard_2.svg" onclick="play()" />
-    </div>
+  <div class="hero-container">
+      <header>
+        <div id="turbulence">
+          <img class="lizard" id="idle" src="images/site/lizard_1.svg" />
+          <img class="lizard" id="tongue" src="images/site/lizard_2.svg" onclick="play()" />
+        </div>
 
-    <!-- add nav menu -->
-    <menu>
-      <a href="work.html">work</a>
-      <a href="about.html">about</a>
-      <a href="contact.html">contact</a>
-    </menu>
-  </header>
+        <!-- add nav menu -->
+        <menu>
+          <a href="work.html">work</a>
+          <a href="about.html">about</a>
+          <a href="contact.html">contact</a>
+        </menu>
+      </header>
 
-  <div class="hero" id="turbulence">
-    <h1>julia eversmann</h1>
-    <h3>hi! i'm a graphic designer and i'm a genius</h3>
+      <div class="hero" id="turbulence">
+        <h1>julia eversmann</h1>
+        <h3>hi! i'm a graphic designer and i'm a genius</h3>
+      </div>
+
+      <button class="rounded" id="red">go look at my work</button>
   </div>
-
-  <button class="rounded" id="red">go look at my work</button>
-
-  <br><br><br>
 
   <div class="project-container">
     <div class="project">
@@ -103,7 +106,7 @@
 
 
 
-  <audio id="enzo" src="sounds/enzo.mp3"></audio>
+  <audio id="boink" src=""></audio>
 </body>
 
 </html>

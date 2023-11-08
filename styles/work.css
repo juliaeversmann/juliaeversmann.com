@@ -1,0 +1,63 @@
+.project-intro {
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 5vw;
+}
+
+.project-details {
+  background-color: var(--accent-pink);
+  color: white;
+  padding: var(--default-padding);
+  border-radius: 10px;
+  box-shadow: 10px 10px var(--text-color);
+  height: 40%;
+  width: 40%;
+  margin: auto;
+}
+
+h4 {
+  font-size: 3vw;
+  font-weight: 400;
+  margin-bottom: 1.5vw;
+  margin-top: 1.5vw;
+}
+
+.dates {
+  border: var(--border-thickness) solid var(--text-color);
+  border-radius: 10px;
+  padding: 7px;
+  background-color: black;
+  color: white;
+}
+
+.project-focus {
+  background-color: white;
+  height: 90%;
+  width: 90%;
+  padding: 5vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 1vw;
+}
+
+.idiot-girl-space {
+  height: 9vh;
+}
+
+.project-paragraph {
+  width: 50%;
+}
+
+p {
+  font-size: 1.5vw;
+  line-height: 1.4;
+}
+
+.internal-mockup {
+  width: 70vw;
+}

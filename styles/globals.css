@@ -9,16 +9,15 @@
   --accent-purple: #a14d9d;
   --accent-pink: #ef4988;
 
-
   /* units */
   --header-height: 8vh;
   --default-padding: 2em;
   --border-thickness: 2px;
+  --border-radius: 10px;
 
   /* setting some stuff */
   background-color: var(--background-color);
   font-family: "elza-narrow", sans-serif;
-
 }
 
 h1 {
@@ -26,10 +25,11 @@ h1 {
   font-size: 12vh;
 }
 
-h2, h3 {
+h2,
+h3 {
   font-family: "elza-narrow";
   font-weight: 400;
-  margin-top: .5vw ;
+  margin-top: 0.5vw;
   font-size: 4.5vw;
 }
 
@@ -41,7 +41,6 @@ body {
   padding: var(--default-padding);
   margin: auto;
 }
-
 
 .outlined-box {
   border: var(--border-thickness) solid var(--text-color);
@@ -114,16 +113,14 @@ menu > a {
   vertical-align: middle;
   font-weight: 400;
   font-family: elza-narrow;
-  font-size:calc(12px + 1.5vw);
+  font-size: calc(12px + 1.5vw);
 }
 
 button {
-  transition: ease-in-out .2s;
+  transition: ease-in-out 0.2s;
   margin: auto;
   display: block;
-
 }
-
 
 button.rounded {
   border-radius: 10px;
@@ -148,10 +145,8 @@ button.rounded:hover > span {
   color: white;
 }
 
-
 button.rounded:active {
   box-shadow: 0px 0px var(--text-color);
-
 }
 
 .hero-container {
@@ -175,13 +170,15 @@ button.rounded:active {
   padding: 7px;
   background-color: black;
   color: white;
+  text-wrap: nowrap;
+  /* line-height: 2; */
 }
 
 .skill-container {
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
-  gap: .5em;
+  gap: 0.5em;
 }
 
 .project {
@@ -215,9 +212,9 @@ button.rounded:active {
 }
 
 #daily-illini {
-  background-color: var(--accent-orange)
+  background-color: var(--accent-orange);
 }
 
 #pocket-bringhurst {
-  background-color: var(--accent-blue)
+  background-color: var(--accent-blue);
 }

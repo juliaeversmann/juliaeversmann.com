@@ -1,9 +1,9 @@
-.project-intro {
+.project-title {
   justify-content: center;
   margin: auto;
   display: flex;
   align-items: center;
-  margin-top: 5vw;
+  margin-top: 2.5vw;
 }
 
 .project-details {
@@ -17,11 +17,18 @@
   margin: auto;
 }
 
+.project_intro {
+  margin-bottom: 5vw;
+  background-color: var(--background-color);
+  padding-top: 0;
+  padding-bottom: 8vw;
+}
+
 h4 {
   font-size: 3vw;
   font-weight: 400;
   margin-bottom: 1.5vw;
-  margin-top: 1.5vw;
+  margin-top: 0;
 }
 
 .dates {
@@ -34,23 +41,21 @@ h4 {
 
 .project-focus {
   background-color: white;
-  height: 90%;
-  width: 90%;
   padding: 5vw;
-  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  row-gap: 1vw;
-}
-
-.idiot-girl-space {
-  height: 9vh;
 }
 
 .project-paragraph {
   width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-paragraph > p {
+  margin-bottom: 0;
 }
 
 p {
@@ -58,6 +63,17 @@ p {
   line-height: 1.4;
 }
 
-.internal-mockup {
+.inline-photo {
   width: 70vw;
+  margin-bottom: 5vw;
+  margin-top: 5vw;
+  border-radius: var(--border-radius);
+}
+
+body {
+  padding: 0;
+}
+
+header {
+  padding: var(--default-padding);
 }

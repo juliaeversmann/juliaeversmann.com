@@ -28,7 +28,7 @@
     />
 
     <!-- favicon that shows on the tab -->
-    <link rel="icon" href="images/site/lizard_1.svg" />
+    <link rel="icon" href="images/site/favicon_lizard.svg" />
   </head>
   <!-- end of template -->
 
@@ -104,7 +104,7 @@
         <!-- add nav menu -->
         <menu>
           <a href="index.html">home</a>
-          <a href="work.html">work</a>
+          <a href="#my-work">work</a>
           <a href="about.html">about</a>
           <a href="contact.html">contact</a>
         </menu>
@@ -115,22 +115,26 @@
         <h2>hi! i'm a graphic designer and i'm a genius</h2>
       </div>
 
-      <button class="rounded" id="red">go look at my work</button>
+      <a href="#my-work">
+        <button class="rounded" id="red">go look at my work</button>
+      </a>
     </div>
 
-    <div class="projects-scroll">
-      <div class="project-container">
-        <div class="project">
-          <img class="mockup" src="images/work/test/cutout_test.png" />
-          <h3>la 2028 olympics</h3>
+    <div class="projects-scroll" id="my-work">
+      <a href="olympics.html">
+        <div class="project-container">
+          <div class="project">
+            <img class="mockup" src="images/work/test/cutout_test.png" />
+            <h3>la 2028 olympics</h3>
 
-          <div class="skill-container">
-            <span class="skill">graphic design</span>
-            <span class="skill">ui / ux</span>
-            <span class="skill">brand identity</span>
+            <div class="skill-container">
+              <span class="skill">graphic design</span>
+              <span class="skill">ui / ux</span>
+              <span class="skill">brand identity</span>
+            </div>
           </div>
         </div>
-      </div>
+      </a>
 
       <div class="project-container">
         <div class="project" id="daily-illini">

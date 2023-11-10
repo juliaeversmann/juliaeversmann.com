@@ -7,7 +7,6 @@
 }
 
 .project-details {
-  background-color: var(--accent-pink);
   color: white;
   padding: var(--default-padding);
   border-radius: 10px;
@@ -15,6 +14,22 @@
   height: 40%;
   width: 40%;
   margin: auto;
+}
+
+.project-details#olympics {
+  background-color: var(--accent-pink);
+}
+
+.project-details#thedailyillini {
+  background-color: var(--accent-orange);
+}
+
+.project-details#pocketbringhurst {
+  background-color: var(--accent-blue);
+}
+
+#big-photo {
+  width: 30vw;
 }
 
 .project_intro {

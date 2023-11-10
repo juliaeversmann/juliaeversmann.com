@@ -17,7 +17,7 @@
     />
 
     <!-- our stylesheet located at styles/globals.css -->
-    <link rel="stylesheet" type="text/css" href="styles/globals.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/globals.css" />
 
     <!-- adobe-provided fonts -->
     <link
@@ -89,30 +89,31 @@
         </filter>
       </defs>
     </svg>
+
     <div class="hero-container">
       <header>
         <div id="turbulence">
-          <img class="lizard" id="idle" src="images/site/lizard_1.svg" />
+          <img class="lizard" id="idle" src="/images/site/lizard_1.svg" />
           <img
             class="lizard"
             id="tongue"
-            src="images/site/lizard_2.svg"
+            src="/images/site/lizard_2.svg"
             onclick="play()"
           />
         </div>
 
         <!-- add nav menu -->
         <menu>
-          <a href="index.html">home</a>
+          <a href="/">home</a>
           <a href="#my-work">work</a>
-          <a href="about.html">about</a>
-          <a href="contact.html">contact</a>
+          <a href="about">about</a>
+          <a href="/contact">contact</a>
         </menu>
       </header>
 
       <div class="hero" id="turbulence">
         <h1>julia eversmann</h1>
-        <h2>hi! i'm a graphic designer and i'm a genius</h2>
+        <h2>graphic designer</h2>
       </div>
 
       <a href="#my-work">
@@ -121,10 +122,10 @@
     </div>
 
     <div class="projects-scroll" id="my-work">
-      <a href="olympics.html">
+      <a href="/olympics">
         <div class="project-container">
           <div class="project">
-            <img class="mockup" src="images/work/test/cutout_test.png" />
+            <img class="mockup" src="/images/work/test/olympics_cutout.webp" />
             <h3>la 2028 olympics</h3>
 
             <div class="skill-container">
@@ -136,31 +137,35 @@
         </div>
       </a>
 
-      <div class="project-container">
-        <div class="project" id="daily-illini">
-          <img class="mockup" src="images/work/test/di_test.png" />
-          <h3>the daily illini</h3>
+      <a href="/thedailyillini">
+        <div class="project-container">
+          <div class="project" id="daily-illini">
+            <img class="mockup" src="/images/work/test/di_cutout.webp" />
+            <h3>the daily illini</h3>
 
-          <div class="skill-container">
-            <span class="skill">graphic design</span>
-            <span class="skill">typesetting</span>
-            <span class="skill">cover design</span>
-            <span class="skill">photo editing</span>
+            <div class="skill-container">
+              <span class="skill">graphic design</span>
+              <span class="skill">page design</span>
+              <span class="skill">cover design</span>
+              <span class="skill">photo editing</span>
+            </div>
           </div>
         </div>
-      </div>
+      </a>
 
-      <div class="project-container">
-        <div class="project" id="pocket-bringhurst">
-          <img class="mockup" src="images/work/test/pb_test.png" />
-          <h3>pocket bringhurst</h3>
+      <a href="/pocketbringhurst/">
+        <div class="project-container">
+          <div class="project" id="pocket-bringhurst">
+            <img class="mockup" src="/images/work/test/pb_cover_cutout.webp" />
+            <h3>pocket bringhurst</h3>
 
-          <div class="skill-container">
-            <span class="skill">book design</span>
-            <span class="skill">cover design</span>
+            <div class="skill-container">
+              <span class="skill">book design</span>
+              <span class="skill">cover design</span>
+            </div>
           </div>
         </div>
-      </div>
+      </a>
     </div>
 
     <audio id="boink" src=""></audio>

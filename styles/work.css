@@ -96,3 +96,7 @@ body {
 header {
   padding: var(--default-padding);
 }
+
+a {
+  text-decoration: underline;
+}

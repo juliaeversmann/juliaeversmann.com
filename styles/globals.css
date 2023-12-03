@@ -32,6 +32,7 @@ h3 {
   font-weight: 400;
   margin-top: 0.5vw;
   font-size: 4.5vw;
+  line-height: 1.2;
 }
 
 p {
@@ -204,7 +205,7 @@ button.rounded:active {
 }
 
 .mockup {
-  margin-bottom: 4vh;
+  margin-bottom: 0;
 }
 
 .projects-scroll {
@@ -213,12 +214,20 @@ button.rounded:active {
   row-gap: 5vw;
 }
 
+#olympics {
+  background-color: var(--accent-pink);
+}
+
 #daily-illini {
   background-color: var(--accent-orange);
 }
 
 #pocket-bringhurst {
   background-color: var(--accent-blue);
+}
+
+#corporate-relations {
+  background-color: var(--accent-red);
 }
 
 .projects-scroll > a {

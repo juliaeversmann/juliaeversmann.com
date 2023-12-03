@@ -37,5 +37,5 @@ p {
   width: 15vw;
   border-radius: var(--border-radius);
   flex: 1;
-  outline: solid black 3px;
+  box-shadow: 10px 10px var(--text-color);
 }

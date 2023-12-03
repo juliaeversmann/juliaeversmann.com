@@ -28,6 +28,10 @@
   background-color: var(--accent-blue);
 }
 
+.project-details#corporate-relations {
+  background-color: var(--accent-red);
+}
+
 #big-photo {
   width: 30vw;
 }

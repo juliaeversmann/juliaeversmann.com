@@ -32,9 +32,9 @@
   background-color: var(--accent-red);
 }
 
-#big-photo {
+/* #big-photo {
   width: 30vw;
-}
+} */
 
 .project_intro {
   margin-bottom: 5vw;
@@ -99,4 +99,41 @@ header {
 
 a {
   text-decoration: underline;
+}
+
+/* adjust for mobile  */
+
+@media only screen and (max-width: 450px) {
+  .project-title > h2 {
+    font-size: 10vw;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10vw;
+  }
+
+  header {
+    padding-bottom: 6vw;
+  }
+
+  .project-details {
+    outline: auto;
+    width: 65vw;
+  }
+
+  h4 {
+    font-size: 7vw;
+  }
+
+  .project-paragraph {
+    outline: auto;
+    width: 80%;
+  }
+
+  .project-paragraph > p {
+    font-size: 4vw;
+  }
+
+  .inline-photo {
+    width: 100%;
+  }
 }

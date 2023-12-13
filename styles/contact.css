@@ -23,3 +23,17 @@
   filter: brightness(80%);
   transition: ease-in-out 0.2s;
 }
+
+/* adjust for mobile  */
+
+@media only screen and (max-width: 450px) {
+  .contact-container {
+    width: 80vw;
+  }
+
+  .contact-icon > img {
+    width: 15vw;
+    border-radius: 5px;
+    box-shadow: 6px 6px var(--text-color);
+  }
+}

@@ -23,7 +23,7 @@
 
 h1 {
   font-family: "ruddy", sans-serif;
-  font-size: 12vh;
+  font-size: 5.8vw;
 }
 
 h2,
@@ -195,8 +195,8 @@ button.rounded:active {
   padding: var(--default-padding);
   border-radius: 10px;
   box-shadow: 10px 10px var(--text-color);
-  height: 40%;
   width: 40%;
+  height: 40%;
   margin: auto;
 }
 
@@ -236,4 +236,74 @@ button.rounded:active {
 
 a {
   text-decoration: none;
+}
+
+.project > img {
+  padding: 2em;
+  margin-bottom: 2vw;
+  margin-top: 2vw;
+  max-height: 40vh;
+  object-fit: contain;
+}
+
+/* adjust for mobile */
+
+@media only screen and (max-width: 450px) {
+  .lizard {
+    height: 8vw;
+  }
+
+  h1 {
+    font-size: 14vw;
+    margin-top: 0;
+    text-align: left;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 7vw;
+    text-align: left;
+    margin-top: 4vw;
+  }
+
+  .project > h3 {
+    font-size: 7vw;
+    margin-bottom: 3vw;
+  }
+
+  menu {
+    margin-top: 3.25vw;
+  }
+  .hero {
+    margin-top: 12vw;
+  }
+
+  .hero-container {
+    height: 50vh;
+  }
+
+  .projects-scroll {
+    margin-top: 30vw;
+  }
+
+  .project {
+    width: 70%;
+    overflow: hidden;
+  }
+
+  .projects-scroll {
+    gap: 10vw;
+  }
+
+  .skill {
+    font-size: 4.25vw;
+    font-weight: 200;
+  }
+
+  .project > img {
+    padding: 0;
+    margin-bottom: 6vw;
+    max-height: 20vh;
+    object-fit: contain;
+  }
 }

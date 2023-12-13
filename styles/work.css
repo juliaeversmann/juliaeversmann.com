@@ -116,7 +116,6 @@ a {
   }
 
   .project-details {
-    outline: auto;
     width: 65vw;
   }
 
@@ -125,7 +124,6 @@ a {
   }
 
   .project-paragraph {
-    outline: auto;
     width: 80%;
   }
 

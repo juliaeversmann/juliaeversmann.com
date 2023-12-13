@@ -133,5 +133,6 @@ a {
 
   .inline-photo {
     width: 100%;
+    object-fit: contain;
   }
 }

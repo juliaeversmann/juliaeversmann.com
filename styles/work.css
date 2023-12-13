@@ -32,9 +32,9 @@
   background-color: var(--accent-red);
 }
 
-/* #big-photo {
+#big-photo {
   width: 30vw;
-} */
+}
 
 .project_intro {
   margin-bottom: 5vw;

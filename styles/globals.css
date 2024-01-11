@@ -134,15 +134,12 @@ button.rounded {
   border: none;
   color: white;
   background-color: var(--accent-red);
-
-  /* transition-property: ; */
-  /* transition-duration: .2s; */
 }
 
 button.rounded:hover {
   background-color: rgb(193, 0, 0);
-  /* transition-duration: .2s; */
 }
+
 button.rounded:hover > span {
   color: white;
 }
@@ -173,7 +170,6 @@ button.rounded:active {
   background-color: black;
   color: white;
   text-wrap: nowrap;
-  /* line-height: 2; */
 }
 
 .skill-container {
@@ -228,6 +224,10 @@ button.rounded:active {
 
 #corporate-relations {
   background-color: var(--accent-red);
+}
+
+#this-website {
+  background-color: var(--accent-purple);
 }
 
 .projects-scroll > a {

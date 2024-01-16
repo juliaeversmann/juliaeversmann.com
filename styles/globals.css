@@ -230,6 +230,10 @@ button.rounded:active {
   background-color: var(--accent-purple);
 }
 
+#class-creature {
+  background-color: var(--accent-green);
+}
+
 .projects-scroll > a {
   text-decoration: none;
 }

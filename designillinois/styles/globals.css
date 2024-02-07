@@ -1,0 +1,143 @@
+:root {
+  /* pretty colors */
+  --text-color: white;
+  --accent-orange: #f2594b;
+  --accent-yellow: #f2ae31;
+  --accent-green: #7aac30;
+  --accent-blue: #0388a6;
+  --accent-pink: #ff48a2;
+
+  --default-padding: 3vw;
+
+  font-family: "neuzeit-grotesk", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  color: var(--text-color);
+  font-family: "dunbar-tall", sans-serif;
+  font-weight: 400;
+}
+
+h2 {
+  color: var(--text-color);
+  font-family: "dunbar-tall", sans-serif;
+  font-weight: 400;
+  font-size: 3.5vw;
+}
+
+p {
+  color: var(--text-color);
+  font-size: 2vw;
+}
+
+menu {
+  background-color: var(--accent-pink);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 5vw;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 35vw;
+}
+
+menu > a {
+  align-self: center;
+  font-size: 2vw;
+}
+
+.hero {
+  background-color: var(--accent-orange);
+  height: 45vw;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.hero > h1 {
+  flex: 2;
+  font-size: 9vw;
+  padding: var(--default-padding);
+}
+
+.hero > img {
+  flex: 1;
+  background-color: var(--accent-yellow);
+}
+
+.info-section {
+  height: 45vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.info-section > .info {
+  flex: 2;
+  margin: 0;
+  padding: var(--default-padding);
+  padding-right: 15vw;
+  line-height: 2.65vw;
+}
+
+.info-section > img {
+  background-color: var(--accent-yellow);
+  flex: 1;
+}
+
+#when-where {
+  background-color: var(--accent-green);
+}
+
+#about {
+  background-color: var(--accent-orange);
+}
+
+span > h2 {
+  margin: 0;
+  background-color: var(--accent-pink);
+  height: 5vw;
+  padding: var(--default-padding);
+}
+
+.directory-row {
+  display: flex;
+  height: 30vw;
+  flex-direction: row;
+}
+
+.directory-row > a {
+  color: var(--text-color);
+  font-size: 3vw;
+  padding: var(--default-padding);
+}
+
+.student {
+  flex: 1;
+}
+
+#green {
+  background-color: var(--accent-green);
+}
+
+#blue {
+  background-color: var(--accent-blue);
+}
+
+#yellow {
+  background-color: var(--accent-yellow);
+}
+
+#pink {
+  background-color: var(--accent-pink);
+}
+
+#orange {
+  background-color: var(--accent-orange);
+}

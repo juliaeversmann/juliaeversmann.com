@@ -6,16 +6,16 @@
   <head>
     <meta charset="UTF-8" />
 
-    <title>about</title>
+    <title>award presentation</title>
 
     <meta name="viewport" content="width=device-width,initial-scale=1" />
 
     <!-- what will show up in the google search result -->
-    <meta name="description" content="i'm a designer and all around cool guy" />
+    <meta name="description" content="assorted graphic design projects" />
 
     <!-- our stylesheet located at styles/globals.css -->
     <link rel="stylesheet" type="text/css" href="/styles/globals.css" />
-    <link rel="stylesheet" type="text/css" href="/styles/about.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/work.css" />
 
     <!-- adobe-provided fonts -->
     <link
@@ -42,7 +42,7 @@
         // generate random number between 1 and 10
         var rand = Math.floor(Math.random() * 10) + 1;
         // set audio source to a random bark
-        audio.src = "../sounds/boink_" + rand + ".mp3";
+        audio.src = "/sounds/boink_" + rand + ".mp3";
         audio.play();
 
         // hide tongue
@@ -87,60 +87,52 @@
         </filter>
       </defs>
     </svg>
-    <header>
-      <div id="turbulence">
-        <img class="lizard" id="idle" src="/images/site/lizard_1.svg" />
-        <img
-          class="lizard"
-          id="tongue"
-          src="/images/site/lizard_2.svg"
-          onclick="play()"
+    <div>
+      <header>
+        <div id="turbulence">
+          <img class="lizard" id="idle" src="/images/site/lizard_1.svg" />
+          <img
+            class="lizard"
+            id="tongue"
+            src="/images/site/lizard_2.svg"
+            onclick="play()"
+          />
+        </div>
+
+        <!-- add nav menu -->
+        <menu>
+          <a href="/">home</a>
+          <a href="/#my-work">work</a>
+          <a href="/about">about</a>
+          <a href="/contact">contact</a>
+        </menu>
+      </header>
+
+      <img
+          class="inline-photo"
+          src="/images/work/olympics/poster_mockup.webp"
         />
-      </div>
 
-      <!-- add nav menu -->
-      <menu>
-        <a href="/">home</a>
-        <a href="/#my-work">work</a>
-        <a href="/about">about</a>
-        <a href="/contact">contact</a>
-      </menu>
-    </header>
+        <img
+          class="inline-photo"
+          src="/images/work/olympics/wayfinding_mockup.webp"
+        />
 
-    <div class="about-container">
-      <div class="about-me">
-        <h2 id="turbulence">about me</h2>
-        <p>
-          hi! i'm julia, a designer based in illinois. i have a passion for
-          connecting and collaborating with people, and i genuinely fall in love
-          with every project that comes my way. my goal is always to make my
-          work accessible, approachable, and fun to experience. <br />
-          <br />
-          i have experience with a variety of design mediums, but i'm always
-          looking to learn new things. my current loves are typography, web
-          design, and brand identity.
-          <br />
-          <br />when i'm not designing, i'm typically watching formula 1 or
-          spending time with my dog, enzo (yes, named after enzo ferrari). i
-          also love listening to MF DOOM, trying to identify random bugs i
-          encounter, and saying "windmill!" whenever i see a wind turbine.
-          <br />
-          <br />
-          <a
-            href="https://drive.google.com/file/d/1zAJ6xP0rdeyyYGgm5i1eUaje__mqjoVT/view?usp=sharing"
-            target="blank"
-            >Award Presentation</a
-          >
-        </p>
-      </div>
+        <img
+          class="inline-photo"
+          src="/images/work/olympics/ticket_mockup.webp"
+        />
 
-      <div class="image-grid">
-        <img src="/images/about/donut_cutout.webp" />
+        <img
+          class="inline-photo"
+          src="/images/work/olympics/brochure_mockup.webp"
+        />
 
-        <img src="/images/about/silverstone_cutout.webp" />
-      </div>
-    </div>
-
+        <img
+          class="inline-photo"
+          src="/images/work/olympics/emails_mockup.webp"
+        />
+     
     <audio id="boink" src=""></audio>
   </body>
 </html>

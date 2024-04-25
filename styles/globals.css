@@ -234,6 +234,10 @@ button.rounded:active {
   background-color: var(--accent-green);
 }
 
+#bugs-next-door {
+  background-color: var(--accent-purple);
+}
+
 .projects-scroll > a {
   text-decoration: none;
 }

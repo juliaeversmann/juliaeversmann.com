@@ -105,6 +105,12 @@ a {
   height: 5vw;
 }
 
+.style-guide {
+  outline-style: solid;
+  outline-width: 1px;
+  color: black;
+}
+
 /* adjust for mobile  */
 
 @media only screen and (max-width: 450px) {
